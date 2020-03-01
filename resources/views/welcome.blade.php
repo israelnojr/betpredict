@@ -154,7 +154,11 @@ Our average accuracy is highly desirable as we benchmark our VIP on 90% success 
         <p class="cta-text"> We Provide sure 5 odds daily for our Basic members, and sure 5 & 10 odds daily for our Advanced members with guaranteed 5 wins per week.</p>
       </div>
       <div class="col-lg-3 cta-btn-container text-center">
-        <a href="{{ route('admin.subscriptions.create')}}" class="cta-btn align-middle">become a VIP</a>
+        @if(Auth::check())
+          <a href="{{ route('admin.subscriptions.create')}}" class="cta-btn align-middle">become a VIP</a>
+        @else
+        <a href="{{ route('register')}}" class="cta-btn align-middle">Join For Free</a>
+        @endif
       </div>
     </div>
    

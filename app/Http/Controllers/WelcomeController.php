@@ -24,10 +24,11 @@ class WelcomeController extends Controller
         $id = Auth::user()->id;
         $user = Auth::user();
        
-        if($user->subscription){
-            return view('strategy');
-        }
+        return view('strategy');
+    }
 
-        return redirect()->back()->with('warning', 'You Do\'nt have acess, Strategy page to Gain Access - Subscribe to VIP');
+    public function terms()
+    {
+        return view('terms');
     }
 }

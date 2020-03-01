@@ -5,8 +5,11 @@
   <p>Sure Soccer Predictions daily !!!</p>
     <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Free Games</a>
+        @if(Auth::check())
         <a href="{{ route('admin.subscriptions.create')}}" class="btn-get-started scrollto">Join VIP</a>
-        <a href="#contact" class="btn-get-started scrollto">Call Admin</a>
+       @else
+        <a href="{{ route('register')}}" class="btn-get-started scrollto">Join For Free</a>
+        @endif
     </div>
 </div>
 

@@ -10,16 +10,14 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="#about">{{ __('FreeGames')}}</a></li>
-          <li><a href="{{ route('admin.subscriptions.create')}}">{{ __('Join VIP')}}</a></li>
+          @if(Auth::check())
+            <li><a href="{{ route('admin.subscriptions.create')}}">{{ __('Join VIP')}}</a></li>
+          @endif
           @guest
           <li class="nav-item">
               <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
           </li>
-          @if (Route::has('register'))
-              <li class="nav-item">
-                  <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-              </li>
-          @endif
+
           @else
           <li class="menu-has-children"><a href="">{{ Auth::user()->name }}</a>
             <ul>

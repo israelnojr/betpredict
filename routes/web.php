@@ -1,5 +1,6 @@
 <?php
 Route::get('/', 'WelcomeController@welcome')->name('welcom');
+Route::get('/terms', 'WelcomeController@terms')->name('terms');
 
 Auth::routes();
 
