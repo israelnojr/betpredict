@@ -22,6 +22,15 @@
    <link href="{{ asset('css/addons/datatables.min.css')}}" rel="stylesheet">
    <link href="{{ asset('css/addons/datatables-select.min.css')}}" rel="stylesheet">
    <script src="{{ asset('js/app.js')}}"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159397369-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159397369-1');
+    </script>
 </head>
 <body>
 <div id="app">

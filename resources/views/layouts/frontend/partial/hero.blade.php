@@ -2,7 +2,7 @@
 <br><br>
 <div class="intro-text mt-7">
   <h2>MAKE MONEY WITH SPORTS BETTING</h2>
-  <p>Sure Soccer Predictions daily !!!</p>
+  <p>Sure Sport Predictions daily !!!</p>
     <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Free Games</a>
         @if(Auth::check())

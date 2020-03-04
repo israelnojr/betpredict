@@ -14,7 +14,7 @@
 
     <div class="container">
         <div class="row">
-            <table class="table table-dark">
+            <table class="table table-dark table-responsive">
                 <thead>
                     <tr>
                     <th scope="col">League</th>
@@ -113,7 +113,7 @@ Our average accuracy is highly desirable as we benchmark our VIP on 90% success 
       <span class="section-divider"></span>
     </div>
     <div class="row">
-            <table class="table table-dark">
+            <table class="table table-dark table-responsive">
                 <thead>
                     <tr>
                     <th scope="col">League</th>
@@ -337,23 +337,24 @@ Our average accuracy is highly desirable as we benchmark our VIP on 90% success 
 
       <div class="col-lg-3 col-md-4">
         <div class="info">
-          <div>
+          <!-- <div>
             <i class="ion-ios-location-outline"></i>
             <p>A108 Adam Street<br>Lagos Nigeria</p>
-          </div>
+          </div> -->
 
           <div>
             <i class="ion-ios-email-outline"></i>
-            <p>info@example.com</p>
+            <p>Betpredictwin@gmail.com</p>
           </div>
         </div>
       </div>
 
       <div class="col-lg-5 col-md-8">
         <div class="form">
+        <a href="https://t.me/betpredictclub" target="_blank"><img src="{{ asset('frontend/img/telegram.png')}}" alt="join telegram" style="width: 100%;" ></a>
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="#"  role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-lg-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

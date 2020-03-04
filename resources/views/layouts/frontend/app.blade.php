@@ -27,6 +27,16 @@
   <link href="{{ asset('frontend/css/style.css')}}" rel="stylesheet">
   <link href="{{asset('frontend/css/message.css')}}" rel="stylesheet">
   <script src="{{ asset('js/app.js')}}"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159397369-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159397369-1');
+</script>
 </head>
 
 <body>
