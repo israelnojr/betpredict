@@ -12,10 +12,10 @@ class WelcomeController extends Controller
     {
         $predictions = Prediction::latest()->where([
                 ['isPremium', false], ['isEndded', true]
-            ])->get()->take(5);
+            ])->paginate(5);
         $prediction = Prediction::latest()->where([
             ['isPremium', false], ['isEndded', false]
-        ])->get()->take(5);
+        ])->paginate(5);
         return view('welcome', compact('predictions','prediction'));
     }
 

@@ -41,6 +41,7 @@
                 @endif
             </table>
         </div>
+        <div class="pagination-wrapper">{{ $prediction->links() }}</div>
     </div>
   </div>
 </section><!-- #about -->
@@ -141,6 +142,7 @@ Our average accuracy is highly desirable as we benchmark our VIP on 90% success 
                 </tbody>
             </table>
         </div>
+        <div class="pagination-wrapper">{{ $predictions->links() }}</div>
   </div>
 </section><!-- #pricing -->
 <!--==========================
@@ -382,4 +384,12 @@ Our average accuracy is highly desirable as we benchmark our VIP on 90% success 
 
   </div>
 </section><!-- #contact -->
+
+<style>
+  .pagination-wrapper{
+      display: flex;
+      justify-content: center;
+   
+}
+</style>
 @endsection
